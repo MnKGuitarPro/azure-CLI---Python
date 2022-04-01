@@ -32,3 +32,18 @@
   time python3 getSubs.py <userName> <userPassword> <tenantId> <storageAccountName> <storageAccountKey> <storageAccountSubscription>
   ```
 
+## createSubnetNSG
+
+- **Description**: The following code adds a Network Security Group to all Subnets that don't have one (except the Gateway Subnets). The main idea is to add this code to an Azure Automation Account and run it using a Service Principal credential. On line `62` it sees the required input, which is: the service principal id, the service principal password and the tenant id (in that order). On line `34` it sees an output that shows the affected subnets.
+- **Execution**:
+  ```bash
+  time python3 createSubnetNSG.py <servicePrincipalId> <servicePrincipalPassword> <tenantId>
+  ```
+- **Login using my account**: If you want to use your username and password to log in, you need to change line `9` to:
+  ```python
+      commnd = f'login -u {uN} -p {uP} --tenant {tI}'
+  ```
+  And then, execute the code as follows:
+  ```bash
+  time python3 createSubnetNSG.py <userName> <userPassword> <tenantId>
+  ```
