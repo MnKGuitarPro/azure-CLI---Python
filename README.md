@@ -99,7 +99,7 @@ Please, enter the Subscription NUMBER of your VM to be cloned:
 ###########################################################################
 
 
-        - Getting Resource Groups from the Subscription BCIRG3POCSUB...
+        - Getting Resource Groups from the Subscription <your subscription name>...
 
 1. RG1                          2. RG2
 
@@ -111,7 +111,7 @@ Please, enter the Resource Group NUMBER of your VM to be cloned:
 ###########################################################################
 
 
-        - Getting VMs from the Resource Group BCIRG3POC-RG-DPAVEZ001...
+        - Getting VMs from the Resource Group <your resource group name>...
 
 1. VM1                          2. VM2
 
